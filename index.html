@@ -23,7 +23,7 @@
     <div class="navbar-nav" style="display:flex; align-content: center; font-weight: 900;">
       <a class="nav-item nav-link active" href="#">Home <span class="sr-only">(current)</span></a>
       <a class="nav-item nav-link" href="about.html">About</a>
-      <a class="nav-item nav-link" href="cart.html" style="display: flex; padding-left:80em;"><i class="fa fa-shopping-cart fa_custom fa-2x"></i></a>
+      <a class="nav-item nav-link" href="cart.html" style="display: flex; padding-left:80em;"><i class="fa fa-shopping-cart fa_custom fa-2x" data-toggle="tooltip" data-placement="bottom" title="Cart" ></i></a>
     </div>
   </nav>
 
@@ -75,14 +75,12 @@
       <p class="lead mb-4">Sign Up for More Infomation</p>
       <div class="d-flex justify-content-center">
           <form action="#" class='form-inline'>
-              <input type="text" class="form-control mb-2 mr-sm-2" placeholder="Email"/>
-              <button type="submit" class="btn btn-primary mb-2">Submit</button>
+              <input type="text" class="form-control mb-2 mr-sm-2" placeholder="Email" data-toggle="tooltip" data-placement="top" title="Enter your email"/>
+              <button type="submit" class="btn btn-primary mb-2" >Submit</button>
           </form>
       </div>
     </div>
-  
-
-
+ 
  <!-- FOOTER -->
  
  <div class="p-5 text-white" id='footer'>
@@ -91,5 +89,14 @@
   </div>
 </div>
 
+<!-- jQuery first, then Popper.js, then Bootstrap JS -->
+<script src="https://code.jquery.com/jquery-3.2.1.slim.min.js" integrity="sha384-KJ3o2DKtIkvYIK3UENzmM7KCkRr/rE9/Qpg6aAZGJwFDMVNA/GpGFF93hXpG5KkN" crossorigin="anonymous"></script>
+<script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.12.9/umd/popper.min.js" integrity="sha384-ApNbgh9B+Y1QKtv3Rn7W3mgPxhU9K/ScQsAP7hUibX39j7fakFPskvXusvfa0b4Q" crossorigin="anonymous"></script>
+<script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/js/bootstrap.min.js" integrity="sha384-JZR6Spejh4U02d8jOt6vLEHfe/JQGiRRSQQxSfFWpi1MquVdAyjUar5+76PVCmYl" crossorigin="anonymous"></script>
+<script>
+  $(function () {
+  $('[data-toggle="tooltip"]').tooltip()
+})
+</script>
 </body>
 </html>
